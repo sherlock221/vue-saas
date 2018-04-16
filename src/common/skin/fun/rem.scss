@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+@function rem($val){
+  @return  $val /100 * 1rem;
+}
+
+ 
+@function px($val){
+  @return $val / 2  *  1px;
+}
+
+
+

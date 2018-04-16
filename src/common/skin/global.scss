@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import "fun/fun";
+
+
+//页面骨架布局部分
+@import "framework";
+
+//页面常用功能 属性
+@import "property/property";
+@import "text/text";
+@import "value/value";
+
+
+
+
+//全屏100%
+.full-screen{
+  position: absolute;
+  width:100%;
+  height:100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.page-layer{
+  padding: 20px;
+}
+
+
+
+
+//布局部分引入 使用ui框架网格布局(可选)
+//float布局
+@import "layout/float";
+//table布局
+@import "layout/table";
+//ib布局
+@import "layout/inline-block";
+@import "layout/position";
+

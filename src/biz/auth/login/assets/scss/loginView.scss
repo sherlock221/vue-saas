@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import "../../../../common/skin/fun/fun";
+
+.login-layer{
+  background: #fff;
+}
+
+.login-title{
+  text-align: center;
+  font-size:30px;
+  font-weight: normal;
+}
+
+.login-slogan{
+  color: #58666e;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.login-box{
+  width: 330px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.login-tips{
+  font-size:12px;
+  line-height:30px;
+  color:#999;
+}
+
+.login-btn{
+  width:100%;
+}

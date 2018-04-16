@@ -1,0 +1,164 @@
+//变量定义
+$header-height : 50px;
+$header-coll-width : 64px;
+$aside-width : 200px;
+
+
+
+html,body{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+
+  background-color : #f0f3f4;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+a{
+  color: inherit;
+  text-decoration: none;
+  &:hover,&:active{
+    color: inherit;
+  }
+}
+
+
+.app{
+  position: relative;
+  width: 100%;
+  height: inherit;
+  min-height: 100%;
+}
+
+.app-wrapper{
+  width: inherit;
+  height: inherit;
+  clear: both;
+}
+
+//顶部
+.app-header{
+  height: $header-height;
+  border-radius: 0px !important;
+  background: #fff;
+
+}
+
+.app-header-bar{
+  line-height: $header-height;
+  padding: 0 15px;
+}
+
+
+
+.app-logo{
+  height: inherit;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+  padding-left: 26px;
+}
+
+
+.app-header-brand{
+  width: $aside-width;
+  float: left;
+  height: inherit;
+}
+
+.app-header-content{
+
+  margin-left: $aside-width;
+  height: inherit;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+
+  .hamburger-container {
+    display: inline-block;
+  }
+
+  .avatar-container {
+    display: inline-block;
+    position: relative;
+
+    .avatar-user{
+      width: 100px;
+
+
+    }
+
+    .avatar-wrapper {
+      cursor: pointer;
+      position: relative;
+
+      .user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .el-icon-caret-bottom {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width: $aside-width;
+
+}
+
+.app-header-fixed .app-header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1025;
+}
+
+
+  //侧边菜单
+.app-aside{
+  float: left;
+  padding-top: $header-height;
+  height: inherit;
+  background: #fff;
+}
+
+//中间内容区域
+.app-content {
+  height: inherit;
+  padding-top: $header-height;
+  margin-left: $aside-width;
+  width: 100%;
+}
+
+
+
+//缩进处理
+.app-wrapper-collapse{
+
+  .app-header-brand{
+    width: $header-coll-width;
+  }
+
+  .app-header-content{
+    margin-left: $header-coll-width;;
+  }
+
+  .app-content{
+    margin-left: $header-coll-width;
+  }
+
+}
+
