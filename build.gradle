@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+
+task installZip(type: Zip) {
+    exclude('.gradle')
+    exclude('.idea')
+    exclude('build')
+    exclude('.gitignore')
+    exclude('build.gradle')
+
+    from('./dist')
+    into('./speedCampus')
+}
+
