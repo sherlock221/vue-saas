@@ -14,7 +14,7 @@ import VueBus from  "@common/class/VueBus";
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import Net from "@util/net";
-
+import BasicDialog from "./component/basic-dialog/basic-dialog";
 
 
 
@@ -54,6 +54,8 @@ class Config extends  SingletonObject {
     //进行服务端配置检查
     this.checkEnv("test");
 
+    //注册全局组件
+    BasicDialog.install(Vue);
   }
 
   SERVER  = {

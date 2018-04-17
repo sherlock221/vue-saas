@@ -14,12 +14,12 @@
       <el-table-column
         prop="chaStuName"
         label="学生"
-        >
+      >
       </el-table-column>
       <el-table-column
         prop="chaClaName"
         label="班级"
-       >
+      >
       </el-table-column>
       <el-table-column
         prop="createDate"
@@ -30,7 +30,7 @@
       <el-table-column
         prop="chaMoney"
         label="金额"
-        >
+      >
       </el-table-column>
     </el-table>
 
@@ -46,7 +46,9 @@
       :total="tbInfo.pageTotal">
     </el-pagination>
 
-
+    <basic-dialog
+      title="极速校园"
+      :dialog-visible.sync="visible"></basic-dialog>
   </div>
 </template>
 
@@ -55,5 +57,3 @@
 <style scoped lang="scss" type="text/css">
   @import "../assets/scss/refundView.scss";
 </style>
-
-

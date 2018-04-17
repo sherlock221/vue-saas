@@ -12,7 +12,8 @@ export default {
       tbInfo : {
         pageIndex: 1,
         pageSize: 10,
-      }
+      },
+      visible: false
     }
   },
 
@@ -44,10 +45,10 @@ export default {
 
       FinanceSev.getUserPlanList(params,data)
         .then(res=>{
-            this.planList = res.bizData.rows;
-            this.tbInfo.pageTotal = res.bizData.records;
-            this.tbInfo.pageSize = res.bizData.pagesize;
-            this.tbInfo.pageIndex = res.bizData.page;
+          this.planList = res.bizData.rows;
+          this.tbInfo.pageTotal = res.bizData.records;
+          this.tbInfo.pageSize = res.bizData.pagesize;
+          this.tbInfo.pageIndex = res.bizData.page;
 
 
         })
