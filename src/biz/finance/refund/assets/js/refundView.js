@@ -56,7 +56,7 @@ export default {
     handleSizeChange (){
 
     },
-    handleCurrentChange(){
+    handleCurrentChange(currentRow){
       this.tbInfo.pageIndex = currentRow;
       this.getList();
     }
